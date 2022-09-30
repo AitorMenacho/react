@@ -1,19 +1,25 @@
 // import { Fragment } from "react"; ----> No es necesario hoy en día, pero es útil.
+import PropTypes from 'prop-types'
 
 
+export const FirstApp = ({ title, subTitle }) => {
 
-export const FirstApp = () => {  
 
   return (
     <>
-      <h1>Aitor</h1>
+      <h1>{title}</h1>
       {/* <code>{ JSON.stringify(newMessage) }</code> */}
-      <p>Soy un subtitulo</p>
+      <p>{subTitle}</p>
     </>
   )
 }
 
+FirstApp.propTypes = {
 
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.number,
+
+}
 
 /*
 
