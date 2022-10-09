@@ -8,11 +8,12 @@ import { PropTypes } from "prop-types";
 //Para usar algo devuelto del componente padre hay que desestructurarlo.
 export const CounterApp = ({ value }) => {
 
-    const [ counter, setCounter ] = useState( 0 )
+    const [ counter, setCounter ] = useState( value )
 
     const handleAdd = () => {
         
         setCounter( counter + 1 )
+        // setCounter( (c) => c + 1 )
 
     }
 
